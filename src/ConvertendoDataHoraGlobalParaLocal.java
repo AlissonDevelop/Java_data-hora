@@ -11,7 +11,6 @@ public class ConvertendoDataHoraGlobalParaLocal {
         Instant d06 = Instant.parse("2023-10-15T01:30:25Z");
 
         /* CONVERTER UMA DATA GLOBAL PARA UMA DATA LOCAL */
-
         /* CONVERTER PARA UMA VARIAVEL DO TIPO LocalDate COM BASE NO TIMEZONE  */
         LocalDate r1 = LocalDate.ofInstant(d06, ZoneId.systemDefault()); // TRAS O HORARIO AUTOMATICAMENTE COM BASE EM LONDERES
         LocalDate r2 = LocalDate.ofInstant(d06, ZoneId.of("Portugal")); // TRAS O HORARIO QUE VOCE DESEJA COM BASE EM LONDERES
@@ -33,17 +32,9 @@ public class ConvertendoDataHoraGlobalParaLocal {
         System.out.println("d05 hora = [" + d05.getHour() +  "]");
         System.out.println("d05 min = [" + d05.getMinute() +  "]");
 
-
         /* ESSE COMANDO IMPROME O NOME DE TODOS OS PAISES COM FUSO HORARIO  */
         /*for (String s : ZoneId.getAvailableZoneIds()) {
             System.out.println(s);
         }*/
-
-
-
-
-
-
-
     }
 }
